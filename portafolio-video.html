@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Fotografía | JP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-container">
+    <a href="index.html" class="navbar-brand">
+      <img src="images/logo.png" alt="Logo JP" />
+    </a>
+    <nav class="site-header-navbar">
+      <ul class="nav-links">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#portafolio">Portafolio</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <h1>Portafolio de Video</h1>
+
+  <div class="galeria-grid">
+    <video controls poster="images/thumb1.jpg" aria-label="Video boda en jardín al atardecer">
+      <source src="images/video1.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
+
+    <video controls poster="images/thumb2.jpg" aria-label="Video comercial para cafetería local">
+      <source src="videos/video2.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
+
+    <video controls poster="images/thumb3.jpg" aria-label="Video promocional de marca de ropa urbana">
+      <source src="images/video3.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
+
+    <video controls poster="images/thumb4.jpg" aria-label="Cortometraje creativo con modelo en exteriores">
+      <source src="images/video4.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
+
+    <video controls poster="images/thumb5.jpg" aria-label="Video para evento empresarial con entrevistas">
+      <source src="images/video5.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
+
+    <video controls poster="images/thumb6.jpg" aria-label="Video musical con estilo cinematográfico">
+      <source src="videos/video6.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a 
+      href="https://wa.me/50212345678?text=Hola%20JP%2C%20quiero%20un%20video%20como%20los%20de%20tu%20portafolio." 
+      class="btn btn-primary"
+      aria-label="Agendar una producción de video por WhatsApp">
+      Agendar un video
+    </a>
+  </div>
+  <div class="video-preview">
+  <div class="video-wrapper">
+    <video 
+      muted 
+      loop 
+      preload="none" 
+      poster="images/thumb1.jpg"
+      aria-label="Video de muestra sin controles visibles">
+      <source src="videos/video1.mp4" type="video/mp4" />
+    </video>
+    <span class="play-icon"></span>
+  </div>
+</div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Martha A. Zelada. Todos los derechos reservados.</p>
+    <p style="font-size: 12px; opacity: 0.7;">Desarrollado por <a href="https://tusitio.dev" target="_blank" rel="noopener">Martha A Zelada</a></p>
+  </footer>
+<!-- JS para reproducir video al pasar el mouse -->
+<script>
+  document.querySelectorAll('.video-wrapper video').forEach(video => {
+    const wrapper = video.closest('.video-wrapper');
+    video.addEventListener('mouseenter', () => {
+      video.play();
+      wrapper.classList.add('playing');
+    });
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+      wrapper.classList.remove('playing');
+    });
+  });
+</script>
+
+</body>
+</html>

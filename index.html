@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="description" content="JP Filmaker - Producción audiovisual, fotografía y videos profesionales en Guatemala. Agenda tu cita para crear algo increíble." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-header">
+      <a href="index.html" class="navbar-brand" aria-label="Logo JP">
+        <img src="images/logo.png" alt="Logo JP" />
+      </a>
+    </div>
+    <nav class="site-header-navbar">
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section id="inicio" class="hero">
+     <div class="hero-content">
+         <p class="subtitulo">Bienvenido</p>
+        <h1>Esto es <span>JP FilmsRD</span></h1>
+         <p class="slogan">Agenta tu cita</p>
+         <div class="hero-buttons">
+          <a href="#" class="btn btn-outline">Whatsapp</a>
+          <a href="#" class="btn btn-primary">Formulario</a>
+        </div>
+        
+        </div>
+    </section>
+
+  <section class="servicios">
+  <div class="servicios-grid">
+    
+    <div class="servicio-card fondo1">
+      <div class="contenido">
+        <h3><a href="portafolio-fotografia.html" class="titulo-link">Fotografía</a></h3>
+        <a href="https://wa.me/50212345678?text=Hola%2C%20vi%20tu%20servicio%20de%20fotografía%20y%20quiero%20contarte%20mi%20idea." class="btn btn-primary">Cuéntame tu idea</a>
+      </div>
+    </div>
+
+    <div class="servicio-card">
+  <video class="video-fondo" autoplay muted loop playsinline>
+    <source src="images/servicio2.mp4" type="video/mp4">
+    Tu navegador no soporta este video.
+  </video>
+  <div class="contenido">
+    <h3><a href="portafolio-video.html" class="titulo-link">Video</a></h3>
+    <a href="https://wa.me/50212345678?text=Hola%2C%20vi%20tu%20servicio%20de%20video%20y%20quiero%20contarte%20mi%20idea." class="btn btn-primary">Cuéntame tu idea</a>
+  </div>
+</div>
+
+  </div>
+</section>
+
+    <section id="portafolio" class="portfolio-section">
+    <div class="swiper-container">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide-item" style="background-image: url('images/proyecto1.jpg')">
+        <div class="slide-content">
+          <p class="desc">Shot on</p>
+          <h3 class="project-title">Bodas</h3>
+          <div class="slide-buttons">
+            <a href="https://wa.me/50212345678?text=Hola%20JP%2C%20vi%20tu%20portafolio%20y%20quiero%20uno%20as%C3%AD.%20%F0%9F%92%AB" 
+            class="btn-slide" 
+            target="_blank">
+            Ver proyecto
+            </a>
+            <a href="#" class="btn-slide">Quiero mi video</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide slide-item video-slide">
+        <video autoplay muted loop playsinline class="slide-video">
+          <source src="images/proyecto2.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+         </video>
+         <div class="slide-content">
+           <p class="desc">Shot on</p>
+          <h3 class="project-title">Comerciales</h3>
+          <div class="slide-buttons">
+            <a href="#" class="btn-slide">Ver proyecto</a>
+            <a href="https://wa.me/50212345678?text=Hola%20JP%2C%20vi%20tu%20portafolio%20y%20quiero%20uno%20as%C3%AD.%20%F0%9F%92%AB" 
+            class="btn-slide" 
+            target="_blank">
+            Sí, quiero uno así
+            </a>
+             </div>
+             </div>
+             </div> 
+          
+
+             </div>
+         </div>
+        </section>
+
+    <section id="contacto" class="section contacto">
+  <h2>Hablemos</h2>
+  <p>Cuéntame tu idea, tu evento o lo que te gustaría grabar. Estoy lista para escucharte.</p>
+  
+  <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Tu nombre" required />
+    <input type="email" name="email" placeholder="Tu correo electrónico" required />
+    <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+    <button type="submit" class="btn btn-primary">Quiero agendar</button>
+
+    <div class="redes-sociales">
+  <a href="https://wa.me/50212345678" target="_blank" aria-label="WhatsApp">
+    <img src="images/whatsapp.svg" alt="WhatsApp" />
+  </a>
+  <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+    <img src="images/instagram.svg" alt="Instagram" />
+  </a>
+  <a href="https://www.facebook.com/tuusuario" target="_blank" aria-label="Facebook">
+    <img src="images/facebook.svg" alt="Facebook" />
+  </a>
+  <a href="https://www.tiktok.com/@tuusuario" target="_blank" aria-label="TikTok">
+    <img src="images/tiktok.svg" alt="TikTok" />
+  </a>
+</div>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Martha A. Zelada. Todos los derechos reservados.</p>
+    <p style="font-size: 12px; opacity: 0.7;">Desarrollado por <a href="https://tusitio.dev" target="_blank" rel="noopener">Martha A Zelada</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ <!-------- slider ------->
+  <script>
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    speed: 800,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+</body>
+</html>
